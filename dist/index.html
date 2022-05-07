@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="img">
+        <div>
+          <h3>BMI Weight Guide</h3>
+          <p>Under Weight = Less than 18.6<br>Normal Range = 18.6 and 24.9<br>Overweight = Greater than 24.9</p>
+        </div>
+      </div>
+      <div id="form">
+        <h1>BMI Calculator</h1>
+        <div id="inputBox">
+          <div><span>What's your height?</span>
+            <input id="height" name="height" type="number"/>
+          </div>
+          <div><span>What's your weight?</span>
+            <input id="weight" name="weight" type="number"/>
+          </div>
+          <div>
+            <button id="button" onclick="calculator()">Caluculate</button>
+          </div>
+        </div>
+        <div id="lg-result">
+          <h2 class="result"></h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="sm-result">
+        <h2 class="result"></h2>
+      </div>
+      <div id="guide">
+        <h3>BMI Weight Guide</h3>
+        <p>Under Weight = Less than 18.6<br>Normal Range = 18.6 and 24.9<br>Overweight = Greater than 24.9</p>
+      </div>
+    </main>
+    <footer><small>&copy; Suzuran7053</small></footer>
+  </body>
+</html>

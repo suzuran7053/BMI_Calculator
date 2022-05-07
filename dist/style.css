@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Russo+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header h1,
+.result {
+  font-family: "Russo One", sans-serif;
+  font-size: 3em;
+}
+
+body:not(header h1) {
+  font-family: "Hind Siliguri", cursive;
+}
+
+header #inputBox {
+  margin: 1.5em;
+  font-size: 1.1em;
+}
+header #inputBox input {
+  width: 8em;
+  line-height: 1.5em;
+  border: none;
+  border-radius: 5px;
+}
+header #button {
+  font-size: 1.1em;
+  min-width: 6em;
+  border: solid 1px black;
+  background-color: #2fba9c;
+  color: black;
+  padding: 0.5em 1em;
+  display: block;
+  margin-left: auto;
+}
+header #button:hover {
+  transition: 0.3s;
+  border: solid 1px #2fba9c;
+  background-color: white;
+  color: #2fba9c;
+}
+
+main {
+  margin: 3em;
+  text-align: center;
+}
+main > div {
+  margin-top: 3em;
+}
+
+footer {
+  padding: 0.3em 0;
+  background-color: #30332E;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 699px) {
+  header {
+    height: 80vw;
+    background-color: pink;
+    background: url("https://images.unsplash.com/photo-1602611001369-f68be171cb86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") center/cover no-repeat;
+    /* #form {
+        margin-top: 5em;
+    } */
+  }
+  header #img {
+    display: none;
+  }
+  header > div {
+    margin: auto;
+    width: 60vw;
+    padding: 5vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+  header > div input {
+    display: block;
+    background-color: white;
+  }
+  header > div #button {
+    margin-top: 1em;
+  }
+
+  #lg-result {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  #img {
+    display: table;
+    background: url("https://images.unsplash.com/photo-1602611001369-f68be171cb86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") center/cover no-repeat;
+    height: 95vh;
+    width: 40vw;
+  }
+  #img > div {
+    color: white;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+
+  header {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  header > div {
+    padding: 2em;
+  }
+  header > div div#inputBox {
+    margin-top: 2em;
+  }
+  header > div input {
+    width: 10em;
+    background-color: #dcd9d9;
+  }
+  header > div #button {
+    margin-top: 5em;
+  }
+
+  #lg-result {
+    display: block;
+  }
+
+  main {
+    display: none;
+  }
+}

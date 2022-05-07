@@ -1,0 +1,138 @@
+// COLOURS
+$dark: #30332E;
+$blue: #2fba9c;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Russo+One&display=swap');
+$title: 'Russo One';
+$normal: 'Hind Siliguri';
+// IN COMMON
+header h1,
+.result {
+    font-family: $title, sans-serif;
+    font-size: 3em;
+}
+
+body:not(header h1) {
+    font-family: $normal, cursive;
+}
+
+header {
+    #inputBox {
+        margin: 1.5em;
+        font-size: 1.1em;
+        input {
+            width: 8em;
+            line-height: 1.5em;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    #button {
+        font-size: 1.1em;
+        min-width: 6em;
+        border: solid 1px black;
+        background-color: $blue;
+        color: black;
+        padding: .5em 1em;
+        display: block;
+        margin-left: auto;
+        &:hover {
+            transition: .3s;
+            border: solid 1px $blue;
+            background-color: white;
+            color: $blue;
+        }
+    }
+}
+
+main {
+    margin: 3em;
+    text-align: center;
+    >div {
+        margin-top: 3em;
+    }
+}
+
+footer {
+    padding: .3em 0;
+    background-color: $dark;
+    color: white;
+    text-align: center;
+}
+
+// FOR MOBILE
+@media only screen and (max-width: 699px) {
+    header {
+        height: 80vw;
+        background-color: pink;
+        background: url("https://images.unsplash.com/photo-1602611001369-f68be171cb86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") center/cover no-repeat;
+        #img {
+            display: none;
+        }
+        /* #form {
+            margin-top: 5em;
+        } */
+        >div {
+            margin: auto;
+            width: 60vw;
+            padding: 5vw;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            input {
+                display: block;
+                background-color: white;
+            }
+            #button {
+                margin-top: 1em;
+            }
+        }
+    }
+    #lg-result {
+        display: none;
+    }
+}
+
+// FOR DESKTOP
+@media only screen and (min-width: 700px) {
+    #img {
+        display: table;
+        background: url("https://images.unsplash.com/photo-1602611001369-f68be171cb86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") center/cover no-repeat;
+        height: 95vh;
+        width: 40vw;
+        >div {
+            color: white;
+            display: table-cell;
+            vertical-align: bottom;
+        }
+    }
+    header {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        >div {
+            padding: 2em;
+            div#inputBox {
+                margin-top: 2em;
+            }
+            input {
+                width: 10em;
+                background-color: rgb(220, 217, 217);
+            }
+            #button {
+                margin-top: 5em;
+            }
+        }
+    }
+    #lg-result {
+        display: block;
+    }
+    main {
+        display: none;
+    }
+}
