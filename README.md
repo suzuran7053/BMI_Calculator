@@ -1,8 +1,9 @@
-#BMI Calculator
+# BMI Calculator
 You can see your BMI by simply typing your height and weight.
 
 - Wireframe
   <img src="./image/wireframe.png">
+  
 - Demoshot
-  <img src="./image/lg.img">
-  <img src="./image/sm.img">
+  <img src="./image/lg.jpg">
+  <img src="./image/sm.png">
