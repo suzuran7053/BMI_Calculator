@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Russo+One&display=swap');
+$title: 'Russo One';
+$normal: 'Hind Siliguri';
+
 // COLOURS
 $dark: #30332E;
 $blue: #2fba9c;
+
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-// FONTS
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Russo+One&display=swap');
-$title: 'Russo One';
-$normal: 'Hind Siliguri';
 // IN COMMON
 header h1,
 .result {
